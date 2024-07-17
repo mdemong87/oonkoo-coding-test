@@ -1,0 +1,54 @@
+.headerWrper {
+    display: grid;
+    grid-template-areas:
+        "left left right right"
+        "middle middle middle middle";
+}
+
+.headerWrper>div {
+    width: 100%;
+}
+
+.left {
+    grid-area: left;
+}
+
+.middle {
+    grid-area: middle;
+    margin-bottom: 3.2rem;
+}
+
+.middle>h3 {
+    padding: 0;
+    margin: 0;
+    padding-top: 22px;
+    font-size: 3rem;
+}
+
+.right {
+    grid-area: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right>div {
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width:1024px) {
+    .middle>h3 {
+        padding-top: 22px;
+        font-size: 2.50rem;
+    }
+}
+
+@media (max-width:768px) {
+    .middle>h3 {
+        padding-top: 22px;
+        font-size: 2.10rem;
+    }
+}

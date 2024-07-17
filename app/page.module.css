@@ -1,0 +1,125 @@
+.homepagecontentWrper {
+    height: 100%;
+    padding: 0 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "leftside leftside middleside middleside middleside middleside middleside rightside rightside";
+    gap: 0.80rem;
+}
+
+.leftsides {
+    grid-area: leftside;
+    display: flex;
+    flex-direction: column;
+    gap: 0.80rem;
+}
+
+.leftsides>div {
+    background: #FFFFFF;
+    border-radius: 0.63rem;
+    width: 100%;
+}
+
+.leftsides>div:first-child {
+    height: 15%;
+}
+
+.leftsides>div:nth-child(2) {
+    height: 25%;
+}
+
+.leftsides>div:last-child {
+    height: 60%;
+}
+
+.middlesides {
+    grid-area: middleside;
+    border-radius: 0.63rem;
+    background: #FFFFFF;
+}
+
+.rightsides {
+    grid-area: rightside;
+    border-radius: 0.63rem;
+    padding: 1.25rem;
+    background: #FFFFFF;
+}
+
+.homepagecontentWrper>div {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.rightsides>div {
+    width: 100%;
+}
+
+
+
+
+.othershavebidWrper {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    position: relative;
+    width: 60px;
+}
+
+
+.othershavebidWrper>div:nth-child(2) {
+    position: absolute;
+    left: 17px;
+}
+
+.othershavebidWrper>div:last-child {
+    position: absolute;
+    left: 35px;
+    width: 1.70rem;
+    height: 1.70rem;
+    background: #000000;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.othershavebidWrper>div:last-child>p {
+    color: #FFFFFF;
+    font-size: 0.75rem;
+    font-weight: 400;
+    padding: 3px;
+}
+
+
+
+
+@media (max-width:1280px) {
+    .homepagecontentWrper {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "middleside middleside middleside middleside middleside middleside middleside middleside middleside rightside rightside rightside rightside";
+    }
+
+    .leftsides {
+        display: none;
+    }
+
+}
+
+
+@media (max-width:1024px) {
+    .homepagecontentWrper {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 340px 1fr;
+        grid-template-areas:
+            "middleside middleside middleside middleside middleside middleside middleside middleside middleside middleside middleside middleside  "
+            "rightside rightside rightside rightside rightside rightside rightside rightside rightside rightside rightside rightside "
+        ;
+        row-gap: 0.80rem;
+    }
+
+}

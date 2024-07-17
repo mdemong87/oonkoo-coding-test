@@ -1,0 +1,8 @@
+.placeBidBtnWrper {
+    background: linear-gradient(#FF7621, #ef6f20);
+    transition: background .8s;
+}
+
+.placeBidBtnWrper:hover {
+    background: linear-gradient(#ef6f20, #FF7621);
+}
