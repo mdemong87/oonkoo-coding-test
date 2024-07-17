@@ -15,7 +15,7 @@ const Header = () => {
                 </div>
                 <div className={styles.middle}>
                     <h3 className="pl-[1px] font-medium">
-                        <span className="text-[#9C9C9C] pr-2">Let's</span>
+                        <span className="text-[#9C9C9C] pr-2">Let&#39;s</span>
                         <span className="text-[#0D0500]">Create Your Campaign</span>
                     </h3>
                 </div>
